@@ -1,0 +1,145 @@
+/*
+
+helper.animate.css © 2015 — 2017 Juliy V. Chirkov
+Distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.css
+
+*/
+
+.animated.slowdown,
+.animated.slower,
+.animated.adagio {
+	animation-duration: 1.5s !important
+}
+
+.animated.slowdown-2x,
+.animated.slower-2x,
+.animated.adagio-2x {
+	animation-duration: 2s !important
+}
+
+.animated.slowdown-large,
+.animated.slowdown-lg,
+.animated.slower-large,
+.animated.slower-lg,
+.animated.adagio-large,
+.animated.adagio-lg {
+	animation-duration: 2.5s !important
+}
+
+.animated.slowdown-3x,
+.animated.slower-3x,
+.animated.adagio-3x {
+	animation-duration: 3s !important
+}
+
+.animated.slowdown-4x,
+.animated.slower-4x,
+.animated.adagio-4x {
+	animation-duration: 4s !important
+}
+
+.animated.slowdown-xtralarge
+.animated.slowdown-xlg,
+.animated.slower-xtralarge,
+.animated.slower-xlg,
+.animated.adagio-xtralarge,
+.animated.adagio-xlg,
+.animated.slowdown-5x,
+.animated.slower-5x,
+.animated.adagio-5x {
+	animation-duration: 5s !important
+}
+
+.animated.slowdown-6x,
+.animated.slower-6x,
+.animated.adagio-6x {
+	animation-duration: 6s !important
+}
+
+.animated.slowdown-7x,
+.animated.slower-7x,
+.animated.adagio-7x {
+	animation-duration: 7s !important
+}
+
+.animated.slowdown-8x,
+.animated.slower-8x,
+.animated.adagio-8x {
+	animation-duration: 8s !important
+}
+
+.animated.slowdown-9x,
+.animated.slower-9x,
+.animated.adagio-9x {
+	animation-duration: 9s !important
+}
+
+.animated.slowdown-huge,
+.animated.slowdown-hg,
+.animated.slower-huge,
+.animated.slower-hg,
+.animated.adagio-huge,
+.animated.adagio-hg,
+.animated.slowdown-10x,
+.animated.slower-10x,
+.animated.adagio-10x {
+	animation-duration: 10s !important
+}
+
+.animated.slowdown-xtrahuge,
+.animated.slowdown-xhg,
+.animated.slower-xtrahuge,
+.animated.slower-xhg,
+.animated.adagio-xtrahuge,
+.animated.adagio-xhg,
+.animated.slowdown-20x,
+.animated.slower-20x,
+.animated.adagio-20x {
+	animation-duration: 20s !important
+}
+
+.animated.faster-2x,
+.animated.allegro-2x {
+	animation-duration: .5s !important
+}
+
+.animated.faster-large,
+.animated.faster-lg,
+.animated.allegro-large,
+.animated.allegro-lg,
+.animated.faster-3x,
+.animated.allegro-3x {
+	animation-duration: .33s !important
+}
+
+.animated.faster-4x,
+.animated.allegro-4x {
+	animation-duration: .25s !important
+}
+
+.animated.faster-xtralarge,
+.animated.faster-xlg,
+.animated.allegro-xtralarge,
+.animated.allegro-xlg,
+.animated.faster-5x,
+.animated.allegro-5x {
+	animation-duration: .2s !important
+}
+
+.animated.faster-huge,
+.animated.faster-hg,
+.animated.allegro-huge,
+.animated.allegro-hg,
+.animated.faster-10x,
+.animated.allegro-10x {
+	animation-duration: .1s !important
+}
+
+.animated.faster-xtrahuge,
+.animated.faster-xhg,
+.animated.allegro-xtrahuge,
+.animated.allegro-xhg,
+.animated.faster-20x,
+.animated.allegro-20x {
+	animation-duration: .05s !important
+}
