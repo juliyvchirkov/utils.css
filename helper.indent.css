@@ -1,0 +1,979 @@
+/*
+
+helper.indent.css © 2015 — 2017 Juliy V. Chirkov
+Distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.css
+
+*/
+
+.indent-top,
+.tindent,
+.tind,
+.indent-top-1x,
+.tindent-1x,
+.tind-1x {
+	margin-top: 10px !important
+}
+
+.indent-top-large,
+.indent-top-lg,
+.tindent-lg,
+.tind-lg {
+	margin-top: 15px !important
+}
+
+.indent-top-2x,
+.tindent-2x,
+.tind-2x {
+	margin-top: 20px !important
+}
+
+.indent-top-xtralarge,
+.indent-top-xlg,
+.tindent-xlg,
+.tind-xlg {
+	margin-top: 25px !important
+}
+
+.indent-top-3x,
+.tindent-3x,
+.tind-3x {
+	margin-top: 30px !important
+}
+
+.indent-top-4x,
+.tindent-4x,
+.tind-4x {
+	margin-top: 40px !important
+}
+
+.indent-top-huge,
+.indent-top-hg,
+.tindent-hg,
+.tind-hg,
+.indent-top-5x,
+.tindent-5x,
+.tind-5x {
+	margin-top: 50px !important
+}
+
+.indent-top-6x,
+.tindent-6x,
+.tind-6x {
+	margin-top: 60px !important
+}
+
+.indent-top-7x,
+.tindent-7x,
+.tind-7x {
+	margin-top: 70px !important
+}
+
+.indent-top-8x,
+.tindent-8x,
+.tind-8x {
+	margin-top: 80px !important
+}
+
+.indent-top-9x,
+.tindent-9x,
+.tind-9x {
+	margin-top: 90px !important
+}
+
+.indent-top-xtrahuge,
+.indent-top-xhg,
+.tindent-xhg,
+.tind-xhg,
+.indent-top-10x,
+.tindent-10x,
+.tind-10x {
+	margin-top: 100px !important
+}
+
+.indent-top-small,
+.indent-top-sm,
+.tindent-sm,
+.tind-sm,
+.indent-top-onehalf,
+.indent-top-1h,
+.tindent-1h,
+.tind-1h {
+	margin-top: 5px !important
+}
+
+.indent-top-xtrasmall,
+.indent-top-xsm,
+.tindent-xsm,
+.tind-xsm,
+.indent-top-onefifth,
+.indent-top-1f,
+.tindent-1f,
+.tind-1f {
+	margin-top: 2px !important
+}
+
+.indent-top-auto,
+.indent-top-a,
+.tindent-a,
+.tind-a {
+	margin-top: auto !important
+}
+
+.indent-top-zero,
+.indent-top-z,
+.tindent-z,
+.tind-z {
+	margin-top: 0 !important
+}
+
+.indent-bottom,
+.bindent,
+.bind,
+.indent-bottom-1x,
+.bindent-1x,
+.bind-1x {
+	margin-bottom: 10px !important
+}
+
+.indent-bottom-large,
+.indent-bottom-lg,
+.bindent-lg,
+.bind-lg {
+	margin-bottom: 15px !important
+}
+
+.indent-bottom-2x,
+.bindent-2x,
+.bind-2x {
+	margin-bottom: 20px !important
+}
+
+.indent-bottom-xtralarge,
+.indent-bottom-xlg,
+.bindent-xlg,
+.bind-xlg {
+	margin-bottom: 25px !important
+}
+
+.indent-bottom-3x,
+.bindent-3x,
+.bind-3x {
+	margin-bottom: 30px !important
+}
+
+.indent-bottom-4x,
+.bindent-4x,
+.bind-4x {
+	margin-bottom: 40px !important
+}
+
+.indent-bottom-huge,
+.indent-bottom-hg,
+.bindent-hg,
+.bind-hg,
+.indent-bottom-5x,
+.bindent-5x,
+.bind-5x {
+	margin-bottom: 50px !important
+}
+
+.indent-bottom-6x,
+.bindent-6x,
+.bind-6x {
+	margin-bottom: 60px !important
+}
+
+.indent-bottom-7x,
+.bindent-7x,
+.bind-7x {
+	margin-bottom: 70px !important
+}
+
+.indent-bottom-8x,
+.bindent-8x,
+.bind-8x {
+	margin-bottom: 80px !important
+}
+
+.indent-bottom-9x,
+.bindent-9x,
+.bind-9x {
+	margin-bottom: 90px !important
+}
+
+.indent-bottom-xtrahuge,
+.indent-bottom-xhg,
+.bindent-xhg,
+.bind-xhg,
+.indent-bottom-10x,
+.bindent-10x,
+.bind-10x {
+	margin-bottom: 100px !important
+}
+
+.indent-bottom-small,
+.indent-bottom-sm,
+.bindent-sm,
+.bind-sm,
+.indent-bottom-onehalf,
+.indent-bottom-1h,
+.bindent-1h,
+.bind-1h {
+	margin-bottom: 5px !important
+}
+
+.indent-bottom-xtrasmall,
+.indent-bottom-xsm,
+.bindent-xsm,
+.bind-xsm,
+.indent-bottom-onefifth,
+.indent-bottom-1f,
+.bindent-1f,
+.bind-1f {
+	margin-bottom: 2px !important
+}
+
+.indent-bottom-auto,
+.indent-bottom-a,
+.bindent-a,
+.bind-a {
+	margin-bottom: auto !important
+}
+
+.indent-bottom-zero,
+.indent-bottom-z,
+.bindent-z,
+.bind-z {
+	margin-bottom: 0 !important
+}
+
+.indent-left,
+.lindent,
+.lind,
+.indent-left-1x,
+.lindent-1x,
+.lind-1x {
+	margin-left: 10px !important
+}
+
+.indent-left-large,
+.indent-left-lg,
+.lindent-lg,
+.lind-lg {
+	margin-left: 15px !important
+}
+
+.indent-left-2x,
+.lindent-2x,
+.lind-2x {
+	margin-left: 20px !important
+}
+
+.indent-left-xtralarge,
+.indent-left-xlg,
+.lindent-xlg,
+.lind-xlg {
+	margin-left: 25px !important
+}
+
+.indent-left-3x,
+.lindent-3x,
+.lind-3x {
+	margin-left: 30px !important
+}
+
+.indent-left-4x,
+.lindent-4x,
+.lind-4x {
+	margin-left: 40px !important
+}
+
+.indent-left-huge,
+.indent-left-hg,
+.lindent-hg,
+.lind-hg,
+.indent-left-5x,
+.lindent-5x,
+.lind-5x {
+	margin-left: 50px !important
+}
+
+.indent-left-6x,
+.lindent-6x,
+.lind-6x {
+	margin-left: 60px !important
+}
+
+.indent-left-7x,
+.lindent-7x,
+.lind-7x {
+	margin-left: 70px !important
+}
+
+.indent-left-8x,
+.lindent-8x,
+.lind-8x {
+	margin-left: 80px !important
+}
+
+.indent-left-9x,
+.lindent-9x,
+.lind-9x {
+	margin-left: 90px !important
+}
+
+.indent-left-xtrahuge,
+.indent-left-xhg,
+.lindent-xhg,
+.lind-xhg,
+.indent-left-10x,
+.lindent-10x,
+.lind-10x {
+	margin-left: 100px !important
+}
+
+.indent-left-small,
+.indent-left-sm,
+.lindent-sm,
+.lind-sm,
+.indent-left-onehalf,
+.indent-left-1h,
+.lindent-1h,
+.lind-1h {
+	margin-left: 5px !important
+}
+
+.indent-left-xtrasmall,
+.indent-left-xsm,
+.lindent-xsm,
+.lind-xsm,
+.indent-left-onefifth,
+.indent-left-1f,
+.lindent-1f,
+.lind-1f {
+	margin-left: 2px !important
+}
+
+.indent-left-auto,
+.indent-left-a,
+.lindent-a,
+.lind-a {
+	margin-left: auto !important
+}
+
+.indent-left-zero,
+.indent-left-z,
+.lindent-z,
+.lind-z {
+	margin-left: 0 !important
+}
+
+.indent-right,
+.rindent,
+.rind,
+.indent-right-1x,
+.rindent-1x,
+.rind-1x {
+	margin-right: 10px !important
+}
+
+.indent-right-large,
+.indent-right-lg,
+.rindent-lg,
+.rind-lg {
+	margin-right: 15px !important
+}
+
+.indent-right-2x,
+.rindent-2x,
+.rind-2x {
+	margin-right: 20px !important
+}
+
+.indent-right-xtralarge,
+.indent-right-xlg,
+.rindent-xlg,
+.rind-xlg {
+	margin-right: 25px !important
+}
+
+.indent-right-3x,
+.rindent-3x,
+.rind-3x {
+	margin-right: 30px !important
+}
+
+.indent-right-4x,
+.rindent-4x,
+.rind-4x {
+	margin-right: 40px !important
+}
+
+.indent-right-huge,
+.indent-right-hg,
+.rindent-hg,
+.rind-hg,
+.indent-right-5x,
+.rindent-5x,
+.rind-5x {
+	margin-right: 50px !important
+}
+
+.indent-right-6x,
+.rindent-6x,
+.rind-6x {
+	margin-right: 60px !important
+}
+
+.indent-right-7x,
+.rindent-7x,
+.rind-7x {
+	margin-right: 70px !important
+}
+
+.indent-right-8x,
+.rindent-8x,
+.rind-8x {
+	margin-right: 80px !important
+}
+
+.indent-right-9x,
+.rindent-9x,
+.rind-9x {
+	margin-right: 90px !important
+}
+
+.indent-right-xtrahuge,
+.indent-right-xhg,
+.rindent-xhg,
+.rind-xhg,
+.indent-right-10x,
+.rindent-10x,
+.rind-10x {
+	margin-right: 100px !important
+}
+
+.indent-right-small,
+.indent-right-sm,
+.rindent-sm,
+.rind-sm,
+.indent-right-onehalf,
+.indent-right-1h,
+.rindent-1h,
+.rind-1h {
+	margin-right: 5px !important
+}
+
+.indent-right-xtrasmall,
+.indent-right-xsm,
+.rindent-xsm,
+.rind-xsm,
+.indent-right-onefifth,
+.indent-right-1f,
+.rindent-1f,
+.rind-1f {
+	margin-right: 2px !important
+}
+
+.indent-right-auto,
+.indent-right-a,
+.rindent-a,
+.rind-a {
+	margin-right: auto !important
+}
+
+.indent-right-zero,
+.indent-right-z,
+.rindent-z,
+.rind-z {
+	margin-right: 0 !important
+}
+
+.indent-top-inner,
+.tindenti,
+.tindi,
+.indent-top-inner-1x,
+.tindenti-1x,
+.tindi-1x {
+	padding-top: 10px !important
+}
+
+.indent-top-inner-large,
+.indent-top-inner-lg,
+.tindenti-lg,
+.tindi-lg {
+	padding-top: 15px !important    
+}
+
+.indent-top-inner-2x,
+.tindenti-2x,
+.tindi-2x {
+	padding-top: 20px !important    
+}
+
+.indent-top-inner-xtralarge,
+.indent-top-inner-xlg,
+.tindenti-xlg,
+.tindi-xlg {
+	padding-top: 25px !important    
+}
+
+.indent-top-inner-3x,
+.tindenti-3x,
+.tindi-3x {
+	padding-top: 30px !important    
+}
+
+.indent-top-inner-4x,
+.tindenti-4x,
+.tindi-4x {
+	padding-top: 40px !important    
+}
+
+.indent-top-inner-huge,
+.indent-top-inner-hg,
+.tindenti-hg,
+.tindi-hg,
+.indent-top-inner-5x,
+.tindenti-5x,
+.tindi-5x {
+	padding-top: 50px !important    
+}
+
+.indent-top-inner-6x,
+.tindenti-6x,
+.tindi-6x {
+	padding-top: 60px !important    
+}
+
+.indent-top-inner-7x,
+.tindenti-7x,
+.tindi-7x {
+	padding-top: 70px !important
+}
+
+.indent-top-inner-8x,
+.tindenti-8x,
+.tindi-8x {
+	padding-top: 80px !important    
+}
+
+.indent-top-inner-9x,
+.tindenti-9x,
+.tindi-9x {
+	padding-top: 90px !important    
+}
+
+.indent-top-inner-xtrahuge,
+.indent-top-inner-xhg,
+.tindenti-xhg,
+.tindi-xhg,
+.indent-top-inner-10x,
+.tindenti-10x,
+.tindi-10x  {
+	padding-top: 100px !important    
+}
+
+.indent-top-inner-small,
+.indent-top-inner-sm,
+.tindenti-sm,
+.tindi-sm,
+.indent-top-inner-onehalf,
+.indent-top-inner-1h,
+.tindenti-1h,
+.tindi-1h {
+	padding-top: 5px !important    
+}
+
+.indent-top-inner-xtrasmall,
+.indent-top-inner-xsm,
+.tindenti-xsm,
+.tindi-xsm,
+.indent-top-inner-onefifth,
+.indent-top-inner-1f,
+.tindenti-1f,
+.tindi-1f {
+	padding-top: 2px !important    
+}
+
+.indent-top-inner-zero,
+.indent-top-inner-z,
+.tindenti-z,
+.tindi-z {
+    padding-top: 0 !important
+}
+
+.indent-bottom-inner,
+.bindenti,
+.bindi,
+.indent-bottom-inner-1x,
+.bindenti-1x,
+.bindi-1x {
+	padding-bottom: 10px !important
+}
+
+.indent-bottom-inner-large,
+.indent-bottom-inner-lg,
+.bindenti-lg,
+.bindi-lg {
+	padding-bottom: 15px !important    
+}
+
+.indent-bottom-inner-2x,
+.bindenti-2x,
+.bindi-2x {
+	padding-bottom: 20px !important    
+}
+
+.indent-bottom-inner-xtralarge,
+.indent-bottom-inner-xlg,
+.bindenti-xlg,
+.bindi-xlg {
+	padding-bottom: 25px !important    
+}
+
+.indent-bottom-inner-3x,
+.bindenti-3x,
+.bindi-3x {
+	padding-bottom: 30px !important    
+}
+
+.indent-bottom-inner-4x,
+.bindenti-4x,
+.bindi-4x {
+	padding-bottom: 40px !important    
+}
+
+.indent-bottom-inner-huge,
+.indent-bottom-inner-hg,
+.bindenti-hg,
+.bindi-hg,
+.indent-bottom-inner-5x,
+.bindenti-5x,
+.bindi-5x {
+	padding-bottom: 50px !important    
+}
+
+.indent-bottom-inner-6x,
+.bindenti-6x,
+.bindi-6x {
+	padding-bottom: 60px !important    
+}
+
+.indent-bottom-inner-7x,
+.bindenti-7x,
+.bindi-7x {
+	padding-bottom: 70px !important
+}
+
+.indent-bottom-inner-8x,
+.bindenti-8x,
+.bindi-8x {
+	padding-bottom: 80px !important    
+}
+
+.indent-bottom-inner-9x,
+.bindenti-9x,
+.bindi-9x {
+	padding-bottom: 90px !important    
+}
+
+.indent-bottom-inner-xtrahuge,
+.indent-bottom-inner-xhg,
+.bindenti-xhg,
+.bindi-xhg,
+.indent-bottom-inner-10x,
+.bindenti-10x,
+.bindi-10x  {
+	padding-bottom: 100px !important    
+}
+
+.indent-bottom-inner-small,
+.indent-bottom-inner-sm,
+.bindenti-sm,
+.bindi-sm,
+.indent-bottom-inner-onehalf,
+.indent-bottom-inner-1h,
+.bindenti-1h,
+.bindi-1h {
+	padding-bottom: 5px !important    
+}
+
+.indent-bottom-inner-xtrasmall,
+.indent-bottom-inner-xsm,
+.bindenti-xsm,
+.bindi-xsm,
+.indent-bottom-inner-onefifth,
+.indent-bottom-inner-1f,
+.bindenti-1f,
+.bindi-1f {
+	padding-bottom: 2px !important    
+}
+
+.indent-bottom-inner-zero,
+.indent-bottom-inner-z,
+.bindenti-z,
+.bindi-z {
+    padding-bottom: 0 !important
+}
+
+.indent-left-inner,
+.lindenti,
+.lindi,
+.indent-left-inner-1x,
+.lindenti-1x,
+.lindi-1x {
+	padding-left: 10px !important
+}
+
+.indent-left-inner-large,
+.indent-left-inner-lg,
+.lindenti-lg,
+.lindi-lg {
+	padding-left: 15px !important    
+}
+
+.indent-left-inner-2x,
+.lindenti-2x,
+.lindi-2x {
+	padding-left: 20px !important    
+}
+
+.indent-left-inner-xtralarge,
+.indent-left-inner-xlg,
+.lindenti-xlg,
+.lindi-xlg {
+	padding-left: 25px !important    
+}
+
+.indent-left-inner-3x,
+.lindenti-3x,
+.lindi-3x {
+	padding-left: 30px !important    
+}
+
+.indent-left-inner-4x,
+.lindenti-4x,
+.lindi-4x {
+	padding-left: 40px !important    
+}
+
+.indent-left-inner-huge,
+.indent-left-inner-hg,
+.lindenti-hg,
+.lindi-hg,
+.indent-left-inner-5x,
+.lindenti-5x,
+.lindi-5x {
+	padding-left: 50px !important    
+}
+
+.indent-left-inner-6x,
+.lindenti-6x,
+.lindi-6x {
+	padding-left: 60px !important    
+}
+
+.indent-left-inner-7x,
+.lindenti-7x,
+.lindi-7x {
+	padding-left: 70px !important
+}
+
+.indent-left-inner-8x,
+.lindenti-8x,
+.lindi-8x {
+	padding-left: 80px !important    
+}
+
+.indent-left-inner-9x,
+.lindenti-9x,
+.lindi-9x {
+	padding-left: 90px !important    
+}
+
+.indent-left-inner-xtrahuge,
+.indent-left-inner-xhg,
+.lindenti-xhg,
+.lindi-xhg,
+.indent-left-inner-10x,
+.lindenti-10x,
+.lindi-10x  {
+	padding-left: 100px !important    
+}
+
+.indent-left-inner-small,
+.indent-left-inner-sm,
+.lindenti-sm,
+.lindi-sm,
+.indent-left-inner-onehalf,
+.indent-left-inner-1h,
+.lindenti-1h,
+.lindi-1h {
+	padding-left: 5px !important    
+}
+
+.indent-left-inner-xtrasmall,
+.indent-left-inner-xsm,
+.lindenti-xsm,
+.lindi-xsm,
+.indent-left-inner-onefifth,
+.indent-left-inner-1f,
+.lindenti-1f,
+.lindi-1f {
+	padding-left: 2px !important    
+}
+
+.indent-left-inner-auto,
+.indent-left-inner-a,
+.lindenti-a,
+.lindi-a {
+    text-align: right !important
+}
+
+.indent-left-inner-zero,
+.indent-left-inner-z,
+.lindenti-z,
+.lindi-z {
+    padding-left: 0 !important
+}
+
+.indent-right-inner,
+.rindenti,
+.rindi,
+.indent-right-inner-1x,
+.rindenti-1x,
+.rindi-1x {
+	padding-right: 10px !important
+}
+
+.indent-right-inner-large,
+.indent-right-inner-lg,
+.rindenti-lg,
+.rindi-lg {
+	padding-right: 15px !important    
+}
+
+.indent-right-inner-2x,
+.rindenti-2x,
+.rindi-2x {
+	padding-right: 20px !important    
+}
+
+.indent-right-inner-xtralarge,
+.indent-right-inner-xlg,
+.rindenti-xlg,
+.rindi-xlg {
+	padding-right: 25px !important    
+}
+
+.indent-right-inner-3x,
+.rindenti-3x,
+.rindi-3x {
+	padding-right: 30px !important    
+}
+
+.indent-right-inner-4x,
+.rindenti-4x,
+.rindi-4x {
+	padding-right: 40px !important    
+}
+
+.indent-right-inner-huge,
+.indent-right-inner-hg,
+.rindenti-hg,
+.rindi-hg,
+.indent-right-inner-5x,
+.rindenti-5x,
+.rindi-5x {
+	padding-right: 50px !important    
+}
+
+.indent-right-inner-6x,
+.rindenti-6x,
+.rindi-6x {
+	padding-right: 60px !important    
+}
+
+.indent-right-inner-7x,
+.rindenti-7x,
+.rindi-7x {
+	padding-right: 70px !important
+}
+
+.indent-right-inner-8x,
+.rindenti-8x,
+.rindi-8x {
+	padding-right: 80px !important    
+}
+
+.indent-right-inner-9x,
+.rindenti-9x,
+.rindi-9x {
+	padding-right: 90px !important    
+}
+
+.indent-right-inner-xtrahuge,
+.indent-right-inner-xhg,
+.rindenti-xhg,
+.rindi-xhg,
+.indent-right-inner-10x,
+.rindenti-10x,
+.rindi-10x  {
+	padding-right: 100px !important    
+}
+
+.indent-right-inner-small,
+.indent-right-inner-sm,
+.rindenti-sm,
+.rindi-sm,
+.indent-right-inner-onehalf,
+.indent-right-inner-1h,
+.rindenti-1h,
+.rindi-1h {
+	padding-right: 5px !important    
+}
+
+.indent-right-inner-xtrasmall,
+.indent-right-inner-xsm,
+.rindenti-xsm,
+.rindi-xsm,
+.indent-right-inner-onefifth,
+.indent-right-inner-1f,
+.rindenti-1f,
+.rindi-1f {
+	padding-right: 2px !important    
+}
+
+.indent-right-inner-auto,
+.indent-right-inner-a,
+.rindenti-a,
+.rindi-a {
+    text-align: left !important
+}
+
+.indent-right-inner-zero,
+.indent-right-inner-z,
+.rindenti-z,
+.rindi-z {
+    padding-right: 0 !important
+}
+
+.indent-left-inner-auto.indent-right-inner-auto,
+.indent-left-inner-auto.indent-right-inner-a,
+.indent-left-inner-auto.rindenti-a,
+.indent-left-inner-auto.rindi-a,
+.indent-left-inner-a.indent-right-inner-auto,
+.indent-left-inner-a.indent-right-inner-a,
+.indent-left-inner-a.rindenti-a,
+.indent-left-inner-a.rindi-a,
+.lindenti-a.indent-right-inner-auto,
+.lindenti-a.indent-right-inner-a,
+.lindenti-a.rindenti-a,
+.lindenti-a.rindi-a,
+.lindi-a.indent-right-inner-auto,
+.lindi-a.indent-right-inner-a,
+.lindi-a.rindenti-a,
+.lindi-a.rindi-a {
+	text-align: center !important    
+}
