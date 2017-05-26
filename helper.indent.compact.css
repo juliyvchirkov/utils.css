@@ -1,7 +1,7 @@
 /*
 
 helper.indent.compact.css © 2015 — 2017 Juliy V. Chirkov
-Distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.css
+distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.css
 
 */
 
@@ -259,6 +259,230 @@ Distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.cs
 
 .rind-z {
 	margin-right: 0 !important
+}
+
+.tnind {
+	margin-top: -10px !important
+}
+
+.tnind-lg {
+	margin-top: -15px !important
+}
+
+.tnind-2x {
+	margin-top: -20px !important
+}
+
+.tnind-xlg {
+	margin-top: -25px !important
+}
+
+.tnind-3x {
+	margin-top: -30px !important
+}
+
+.tnind-4x {
+	margin-top: -40px !important
+}
+
+.tnind-hg {
+	margin-top: -50px !important
+}
+
+.tnind-6x {
+	margin-top: -60px !important
+}
+
+.tnind-7x {
+	margin-top: -70px !important
+}
+
+.tnind-8x {
+	margin-top: -80px !important
+}
+
+.tnind-9x {
+	margin-top: -90px !important
+}
+
+.tnind-xhg {
+	margin-top: -100px !important
+}
+
+.tnind-sm {
+	margin-top: -5px !important
+}
+
+.tnind-xsm {
+	margin-top: -2px !important
+}
+
+.bnind {
+	margin-bottom: -10px !important
+}
+
+.bnind-lg {
+	margin-bottom: -15px !important
+}
+
+.bnind-2x {
+	margin-bottom: -20px !important
+}
+
+.bnind-xlg {
+	margin-bottom: -25px !important
+}
+
+.bnind-3x {
+	margin-bottom: -30px !important
+}
+
+.bnind-4x {
+	margin-bottom: -40px !important
+}
+
+.bnind-hg {
+	margin-bottom: -50px !important
+}
+
+.bnind-6x {
+	margin-bottom: -60px !important
+}
+
+.bnind-7x {
+	margin-bottom: -70px !important
+}
+
+.bnind-8x {
+	margin-bottom: -80px !important
+}
+
+.bnind-9x {
+	margin-bottom: -90px !important
+}
+
+.bnind-xhg {
+	margin-bottom: -100px !important
+}
+
+.bnind-sm {
+	margin-bottom: -5px !important
+}
+
+.bnind-xsm {
+	margin-bottom: -2px !important
+}
+
+.lnind {
+	margin-left: -10px !important
+}
+
+.lnind-lg {
+	margin-left: -15px !important
+}
+
+.lnind-2x {
+	margin-left: -20px !important
+}
+
+.lnind-xlg {
+	margin-left: -25px !important
+}
+
+.lnind-3x {
+	margin-left: -30px !important
+}
+
+.lnind-4x {
+	margin-left: -40px !important
+}
+
+.lnind-hg {
+	margin-left: -50px !important
+}
+
+.lnind-6x {
+	margin-left: -60px !important
+}
+
+.lnind-7x {
+	margin-left: -70px !important
+}
+
+.lnind-8x {
+	margin-left: -80px !important
+}
+
+.lnind-9x {
+	margin-left: -90px !important
+}
+
+.lnind-xhg {
+	margin-left: -100px !important
+}
+
+.lnind-sm {
+	margin-left: -5px !important
+}
+
+.lnind-xsm {
+	margin-left: -2px !important
+}
+
+.rnind {
+	margin-right: -10px !important
+}
+
+.rnind-lg {
+	margin-right: -15px !important
+}
+
+.rnind-2x {
+	margin-right: -20px !important
+}
+
+.rnind-xlg {
+	margin-right: -25px !important
+}
+
+.rnind-3x {
+	margin-right: -30px !important
+}
+
+.rnind-4x {
+	margin-right: -40px !important
+}
+
+.rnind-hg {
+	margin-right: -50px !important
+}
+
+.rnind-6x {
+	margin-right: -60px !important
+}
+
+.rnind-7x {
+	margin-right: -70px !important
+}
+
+.rnind-8x {
+	margin-right: -80px !important
+}
+
+.rnind-9x {
+	margin-right: -90px !important
+}
+
+.rnind-xhg {
+	margin-right: -100px !important
+}
+
+.rnind-sm {
+	margin-right: -5px !important
+}
+
+.rnind-xsm {
+	margin-right: -2px !important
 }
 
 .tindi {

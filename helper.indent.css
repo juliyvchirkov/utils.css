@@ -1,7 +1,7 @@
 /*
 
 helper.indent.css © 2015 — 2017 Juliy V. Chirkov
-Distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.css
+distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.css
 
 */
 
@@ -487,6 +487,434 @@ Distributed under the MIT Licence at https://github.com/juliyvchirkov/helpers.cs
 .rindent-z,
 .rind-z {
 	margin-right: 0 !important
+}
+
+.negative-indent-top,
+.tnindent,
+.tnind,
+.negative-indent-top-1x,
+.tnindent-1x,
+.tnind-1x {
+	margin-top: -10px !important
+}
+
+.negative-indent-top-large,
+.negative-indent-top-lg,
+.tnindent-lg,
+.tnind-lg {
+	margin-top: -15px !important
+}
+
+.negative-indent-top-2x,
+.tnindent-2x,
+.tnind-2x {
+	margin-top: -20px !important
+}
+
+.negative-indent-top-xtralarge,
+.negative-indent-top-xlg,
+.tnindent-xlg,
+.tnind-xlg {
+	margin-top: -25px !important
+}
+
+.negative-indent-top-3x,
+.tnindent-3x,
+.tnind-3x {
+	margin-top: -30px !important
+}
+
+.negative-indent-top-4x,
+.tnindent-4x,
+.tnind-4x {
+	margin-top: -40px !important
+}
+
+.negative-indent-top-huge,
+.negative-indent-top-hg,
+.tnindent-hg,
+.tnind-hg,
+.negative-indent-top-5x,
+.tnindent-5x,
+.tnind-5x {
+	margin-top: -50px !important
+}
+
+.negative-indent-top-6x,
+.tnindent-6x,
+.tnind-6x {
+	margin-top: -60px !important
+}
+
+.negative-indent-top-7x,
+.tnindent-7x,
+.tnind-7x {
+	margin-top: -70px !important
+}
+
+.negative-indent-top-8x,
+.tnindent-8x,
+.tnind-8x {
+	margin-top: -80px !important
+}
+
+.negative-indent-top-9x,
+.tnindent-9x,
+.tnind-9x {
+	margin-top: -90px !important
+}
+
+.negative-indent-top-xtrahuge,
+.negative-indent-top-xhg,
+.tnindent-xhg,
+.tnind-xhg,
+.negative-indent-top-10x,
+.tnindent-10x,
+.tnind-10x {
+	margin-top: -100px !important
+}
+
+.negative-indent-top-small,
+.negative-indent-top-sm,
+.tnindent-sm,
+.tnind-sm,
+.negative-indent-top-onehalf,
+.negative-indent-top-1h,
+.tnindent-1h,
+.tnind-1h {
+	margin-top: -5px !important
+}
+
+.negative-indent-top-xtrasmall,
+.negative-indent-top-xsm,
+.tnindent-xsm,
+.tnind-xsm,
+.negative-indent-top-onefifth,
+.negative-indent-top-1f,
+.tnindent-1f,
+.tnind-1f {
+	margin-top: -2px !important
+}
+
+.negative-indent-bottom,
+.bnindent,
+.bnind,
+.negative-indent-bottom-1x,
+.bnindent-1x,
+.bnind-1x {
+	margin-bottom: -10px !important
+}
+
+.negative-indent-bottom-large,
+.negative-indent-bottom-lg,
+.bnindent-lg,
+.bnind-lg {
+	margin-bottom: -15px !important
+}
+
+.negative-indent-bottom-2x,
+.bnindent-2x,
+.bnind-2x {
+	margin-bottom: -20px !important
+}
+
+.negative-indent-bottom-xtralarge,
+.negative-indent-bottom-xlg,
+.bnindent-xlg,
+.bnind-xlg {
+	margin-bottom: -25px !important
+}
+
+.negative-indent-bottom-3x,
+.bnindent-3x,
+.bnind-3x {
+	margin-bottom: -30px !important
+}
+
+.negative-indent-bottom-4x,
+.bnindent-4x,
+.bnind-4x {
+	margin-bottom: -40px !important
+}
+
+.negative-indent-bottom-huge,
+.negative-indent-bottom-hg,
+.bnindent-hg,
+.bnind-hg,
+.negative-indent-bottom-5x,
+.bnindent-5x,
+.bnind-5x {
+	margin-bottom: -50px !important
+}
+
+.negative-indent-bottom-6x,
+.bnindent-6x,
+.bnind-6x {
+	margin-bottom: -60px !important
+}
+
+.negative-indent-bottom-7x,
+.bnindent-7x,
+.bnind-7x {
+	margin-bottom: -70px !important
+}
+
+.negative-indent-bottom-8x,
+.bnindent-8x,
+.bnind-8x {
+	margin-bottom: -80px !important
+}
+
+.negative-indent-bottom-9x,
+.bnindent-9x,
+.bnind-9x {
+	margin-bottom: -90px !important
+}
+
+.negative-indent-bottom-xtrahuge,
+.negative-indent-bottom-xhg,
+.bnindent-xhg,
+.bnind-xhg,
+.negative-indent-bottom-10x,
+.bnindent-10x,
+.bnind-10x {
+	margin-bottom: -100px !important
+}
+
+.negative-indent-bottom-small,
+.negative-indent-bottom-sm,
+.bnindent-sm,
+.bnind-sm,
+.negative-indent-bottom-onehalf,
+.negative-indent-bottom-1h,
+.bnindent-1h,
+.bnind-1h {
+	margin-bottom: -5px !important
+}
+
+.negative-indent-bottom-xtrasmall,
+.negative-indent-bottom-xsm,
+.bnindent-xsm,
+.bnind-xsm,
+.negative-indent-bottom-onefifth,
+.negative-indent-bottom-1f,
+.bnindent-1f,
+.bnind-1f {
+	margin-bottom: -2px !important
+}
+
+.negative-indent-left,
+.lnindent,
+.lnind,
+.negative-indent-left-1x,
+.lnindent-1x,
+.lnind-1x {
+	margin-left: -10px !important
+}
+
+.negative-indent-left-large,
+.negative-indent-left-lg,
+.lnindent-lg,
+.lnind-lg {
+	margin-left: -15px !important
+}
+
+.negative-indent-left-2x,
+.lnindent-2x,
+.lnind-2x {
+	margin-left: -20px !important
+}
+
+.negative-indent-left-xtralarge,
+.negative-indent-left-xlg,
+.lnindent-xlg,
+.lnind-xlg {
+	margin-left: -25px !important
+}
+
+.negative-indent-left-3x,
+.lnindent-3x,
+.lnind-3x {
+	margin-left: -30px !important
+}
+
+.negative-indent-left-4x,
+.lnindent-4x,
+.lnind-4x {
+	margin-left: -40px !important
+}
+
+.negative-indent-left-huge,
+.negative-indent-left-hg,
+.lnindent-hg,
+.lnind-hg,
+.negative-indent-left-5x,
+.lnindent-5x,
+.lnind-5x {
+	margin-left: -50px !important
+}
+
+.negative-indent-left-6x,
+.lnindent-6x,
+.lnind-6x {
+	margin-left: -60px !important
+}
+
+.negative-indent-left-7x,
+.lnindent-7x,
+.lnind-7x {
+	margin-left: -70px !important
+}
+
+.negative-indent-left-8x,
+.lnindent-8x,
+.lnind-8x {
+	margin-left: -80px !important
+}
+
+.negative-indent-left-9x,
+.lnindent-9x,
+.lnind-9x {
+	margin-left: -90px !important
+}
+
+.negative-indent-left-xtrahuge,
+.negative-indent-left-xhg,
+.lnindent-xhg,
+.lnind-xhg,
+.negative-indent-left-10x,
+.lnindent-10x,
+.lnind-10x {
+	margin-left: -100px !important
+}
+
+.negative-indent-left-small,
+.negative-indent-left-sm,
+.lnindent-sm,
+.lnind-sm,
+.negative-indent-left-onehalf,
+.negative-indent-left-1h,
+.lnindent-1h,
+.lnind-1h {
+	margin-left: -5px !important
+}
+
+.negative-indent-left-xtrasmall,
+.negative-indent-left-xsm,
+.lnindent-xsm,
+.lnind-xsm,
+.negative-indent-left-onefifth,
+.negative-indent-left-1f,
+.lnindent-1f,
+.lnind-1f {
+	margin-left: -2px !important
+}
+
+.negative-indent-right,
+.rnindent,
+.rnind,
+.negative-indent-right-1x,
+.rnindent-1x,
+.rnind-1x {
+	margin-right: -10px !important
+}
+
+.negative-indent-right-large,
+.negative-indent-right-lg,
+.rnindent-lg,
+.rnind-lg {
+	margin-right: -15px !important
+}
+
+.negative-indent-right-2x,
+.rnindent-2x,
+.rnind-2x {
+	margin-right: -20px !important
+}
+
+.negative-indent-right-xtralarge,
+.negative-indent-right-xlg,
+.rnindent-xlg,
+.rnind-xlg {
+	margin-right: -25px !important
+}
+
+.negative-indent-right-3x,
+.rnindent-3x,
+.rnind-3x {
+	margin-right: -30px !important
+}
+
+.negative-indent-right-4x,
+.rnindent-4x,
+.rnind-4x {
+	margin-right: -40px !important
+}
+
+.negative-indent-right-huge,
+.negative-indent-right-hg,
+.rnindent-hg,
+.rnind-hg,
+.negative-indent-right-5x,
+.rnindent-5x,
+.rnind-5x {
+	margin-right: -50px !important
+}
+
+.negative-indent-right-6x,
+.rnindent-6x,
+.rnind-6x {
+	margin-right: -60px !important
+}
+
+.negative-indent-right-7x,
+.rnindent-7x,
+.rnind-7x {
+	margin-right: -70px !important
+}
+
+.negative-indent-right-8x,
+.rnindent-8x,
+.rnind-8x {
+	margin-right: -80px !important
+}
+
+.negative-indent-right-9x,
+.rnindent-9x,
+.rnind-9x {
+	margin-right: -90px !important
+}
+
+.negative-indent-right-xtrahuge,
+.negative-indent-right-xhg,
+.rnindent-xhg,
+.rnind-xhg,
+.negative-indent-right-10x,
+.rnindent-10x,
+.rnind-10x {
+	margin-right: -100px !important
+}
+
+.negative-indent-right-small,
+.negative-indent-right-sm,
+.rnindent-sm,
+.rnind-sm,
+.negative-indent-right-onehalf,
+.negative-indent-right-1h,
+.rnindent-1h,
+.rnind-1h {
+	margin-right: -5px !important
+}
+
+.negative-indent-right-xtrasmall,
+.negative-indent-right-xsm,
+.rnindent-xsm,
+.rnind-xsm,
+.negative-indent-right-onefifth,
+.negative-indent-right-1f,
+.rnindent-1f,
+.rnind-1f {
+	margin-right: -2px !important
 }
 
 .indent-top-inner,
