@@ -1,0 +1,70 @@
+{
+  "name": "utils.css",
+  "version": "2.0.0-rc1",
+  "license": "MIT",
+  "homepage": "https://github.com/juliyvchirkov/utils.css",
+  "bugs": "https://github.com/juliyvchirkov/utils.css/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliyvchirkov/utils.css"
+  },
+  "author": {
+    "name": "Juliy V. Chirkov",
+    "url": "https://juliyvchirkov.github.io"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "cssnano": "^3.10.0",
+    "cssnano-preset-default": "^4.0.0-rc.2",
+    "postcss": "^6.0.13",
+    "postcss-node-sass": "^1.2.0",
+    "postcss-scss": "^1.0.2"
+  },
+  "scripts": {
+    "build": "for src in *.scss; do postcss $src -o ../dist/$(basename $src .scss).min.css -p postcss-scss -u postcss-node-sass -u autoprefixer -u cssnano --no-map; done"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "css4",
+    "libsass",
+    "sass",
+    "scss",
+    "mixins",
+    "utility",
+    "postcss",
+    "postcss-scss",
+    "node",
+    "node-sass",
+    "style",
+    "stylesheet",
+    "layout",
+    "indentation",
+    "alignment",
+    "text-transform",
+    "css-animations",
+    "animate",
+    "animation",
+    "mobile-first",
+    "bootstrap",
+    "bootstrap4",
+    "html",
+    "html5",
+    "html-css"
+  ],
+  "browserslist": [
+    "Chrome >= 45",
+    "Firefox ESR",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ],
+  "cssnano": {
+    "preset": [
+      "default"
+    ]
+  }
+}

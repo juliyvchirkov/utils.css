@@ -1,0 +1,9 @@
+$ruler: .05 xh, .1 hg, .2 xl, .25 4x, .33 lg, .5 2x, 1.5 "", 2, 2.5 lg, 3, 4, 5 xl, 6, 7, 8, 9, 10 hg, 20 xh;
+
+@each $unit in $ruler {
+    $val: nth($unit, 1);
+    .animated.#{if($val < 1, allegro, adagio) + if($val != 1.5, "-", "") +
+                if(length($unit) == 1, $val + x, nth($unit, 2))} {
+      animation-duration: #{$val}s !important;
+    }
+}

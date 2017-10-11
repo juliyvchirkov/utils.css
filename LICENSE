@@ -1,24 +1,19 @@
 MIT License
 
-Copyright © 2015 — 2017 Juliy V. Chirkov https://juliyvchirkov.github.io
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of the code of CSS helper
-set(s) at https://github.com/juliyvchirkov/helpers.css & any associated documentation (the «Code»)
-the rights to deal w/ the Code w/o any limitation, i.e. to use, copy, modify, merge, publish, distribute,
-sell copies of the Code as part of own layouts / code / software (the «Software») et cetera, & to permit
-persons to whom the Software are furnished to do the same way, provided that
-<a> the above copyright notice and this permission notice appear with all copies of the Software in
-associated documentation 
-<b> there is clear notice in the documentation associated with the Software that the Code has been
-modified if the Code included as part of the Software has been modified before / during inclusion
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Except as stated above, the Code copyright holder shall not be mentioned in any kind of promotion
-for sale, use & other dealings regarding the Software containing the Code w/o prior written
-authorization of the copyright holder 
-
-The Code is provided «AS IS», without warranty of any kind, express or implied, including but not
-limited to the warranties of merchantability, fitness for a particular purpose & noninfringement of
-third party rights. In no event in no way shall copyright holder mentioned in this notice be liable
-for any claim, or any special indirect or consequential damages, or any damages whatsoever resulting
-from loss of use, data or profits, whether in an action of contract or any other activity, arising
-out of any kind of use of the Software containing the Code
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

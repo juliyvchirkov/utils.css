@@ -1,0 +1,115 @@
+$properties: margin padding;
+$directions: null top bottom left right;
+$ruler: 2 xs, 5 sm, 10 "", 15 lg, 20, 25 xl, 30, 40, 50 hg, 60, 70, 80, 90, 100 xh;
+
+@mixin compile-property($prop, $bp: "", $sign: "") {
+    @each $side in $directions {
+        @each $unit in if($sign == "", join($ruler, (0 z, if($prop == margin and $side != null, auto a, ""))), $ruler) {
+            $val: nth($unit, 1);
+            $id: if(length($unit) == 2, nth($unit, 2), null);
+            .#{if($side != null, str-slice($side, 1, 1), "") + if($sign != "", n, "") +
+            ind + if($prop == padding, i, "") + $bp + if($val != 10, "-", "") +
+            if($id == null, str-slice("" + $val, 1, 1) + x, $id)} {
+                #{$prop + if($side != null, "-" + $side, "")}: #{$sign + $val +
+                if($id != null and index(a z, $id) != null, "", px)} !important;
+            }
+        }
+    }
+}
+
+@mixin margin($margin) {
+    margin: $margin !important;
+}
+
+@mixin alike-padding($align, $justify: null) {
+    display: flex !important;
+    @if $align != null {
+        align-items: #{if($align != center, flex-, "") + $align} !important;
+    }
+    @if $justify != null {
+        justify-content: #{if($justify != center, flex-, "") + $justify} !important;
+    }
+}
+
+@mixin compile-sets($bp: "") {
+    @each $prop in $properties {
+        @include compile-property($prop, $bp);
+    }
+    @include compile-property(margin, $bp, "-");
+    .tind#{$bp}-a.bind#{$bp}-a {
+        @include margin(auto 0);
+    }
+    .tind#{$bp}-a.lind#{$bp}-a {
+        @include margin(auto 0 0 auto);
+    }
+    .tind#{$bp}-a.rind#{$bp}-a {
+        @include margin(auto 0 0);
+    }
+    .tind#{$bp}-a.lind#{$bp}-a.rind#{$bp}-a {
+        @include margin(auto auto 0);
+    }
+    .tind#{$bp}-a.bind#{$bp}-a.lind#{$bp}-a.rind#{$bp}-a,
+    .ind#{$bp}-a {
+        @include margin(auto);
+    }
+    .bind#{$bp}-a.lind#{$bp}-a {
+        @include margin(0 0 auto auto);
+    }
+    .bind#{$bp}-a.rind#{$bp}-a {
+        @include margin(0 auto auto 0);
+    }
+    .bind#{$bp}-a.lind#{$bp}-a.rind#{$bp}-a {
+        @include margin(0 auto auto);
+    }
+    .lind#{$bp}-a.rind#{$bp}-a {
+        @include margin(0 auto);
+    }
+    .tindi#{$bp}-a {
+        @include alike-padding(end);
+    }
+    .tindi#{$bp}-a.bindi#{$bp}-a {
+        @include alike-padding(center);
+    }
+    .tindi#{$bp}-a.bindi#{$bp}-a.lindi#{$bp}-a {
+        @include alike-padding(center, end);
+    }
+    .tindi#{$bp}-a.bindi#{$bp}-a.rindi#{$bp}-a {
+        @include alike-padding(center, start);
+    }
+    .tindi#{$bp}-a.lindi#{$bp}-a {
+        @include alike-padding(end, end);
+    }
+    .tindi#{$bp}-a.rindi#{$bp}-a {
+        @include alike-padding(end, start);
+    }
+    .tindi#{$bp}-a.lindi#{$bp}-a.rindi#{$bp}-a {
+        @include alike-padding(end, center);
+    }
+    .tindi#{$bp}-a.bindi#{$bp}-a.lindi#{$bp}-a.rindi#{$bp}-a,
+    .indi#{$bp}-a {
+        @include alike-padding(center, center);
+    }
+    .bindi#{$bp}-a {
+        @include alike-padding(start);
+    }
+    .bindi#{$bp}-a.lindi#{$bp}-a {
+        @include alike-padding(start, end);
+    }
+    .bindi#{$bp}-a.rindi#{$bp}-a {
+        @include alike-padding(start, start);
+    }
+    .bindi#{$bp}-a.lindi#{$bp}-a.rindi#{$bp}-a {
+        @include alike-padding(start, center);
+    }
+    .lindi#{$bp}-a.rindi#{$bp}-a {
+        @include alike-padding(null, center);
+    }
+}
+
+.d-flex {
+    display: flex !important;
+}
+.d-grid {
+    display: grid !important;
+}
+@include compile-sets;

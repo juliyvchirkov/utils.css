@@ -1,0 +1,10 @@
+@mixin compile-sets($bp: "") {
+    .text#{$bp}-transparent,
+    .text#{$bp}-transparent:focus,
+    .text#{$bp}-transparent:hover {
+      color: transparent !important;
+      text-shadow: 0 0 0 transparent !important;
+    }
+}
+
+@include compile-sets;
