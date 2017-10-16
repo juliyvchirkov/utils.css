@@ -1,24 +1,57 @@
 $properties: width height;
-$ruler: 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, auto a;
+$poles: max min;
+$axis: x y;
+$ruler: 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, auto, none;
+
+@function pole-idx($val) {
+    @return if(index($poles, $val) == length($poles), 2, 1);
+}
+
+@mixin compile-property($prop, $val, $suf, $bp: "", $pref: null, $un: "%", $ax: null) {
+    $i: pole-idx($pref);
+    .#{if($pref != null, str-slice($pref, $i, $i), "") + str-slice($prop, 1, 1) + $bp + "-" + $suf} {
+        #{if($pref != null, $pref + "-", "") + $prop}: #{$val + if(type-of($val) == number, $un, "")} !important;
+        @if $ax != null and $val == 100 {
+            overflow-#{$ax}: hidden !important;
+        }
+    }
+}
 
 @mixin compile-sets($bp: "") {
     @each $prop in $properties {
         @each $unit in $ruler {
             $val: nth($unit, 1);
-            $id: if(length($unit) == 2, nth($unit, 2), null);
-            .#{str-slice($prop, 1, 1) + $bp}-#{if($id != null, $id, $val)} {
-                #{$prop}: #{$val + if($id == null, "%", "")} !important;
+            $suf: if(type-of($unit) == string, str-slice($unit, 1, 1), $val);
+            $ax: nth($axis, index($properties, $prop));
+            @if type-of($val) == number and $bp == "" {
+                $vp: "-vp";
+                @include compile-property($prop, $val, $suf, $vp, null, v + str-slice($prop, 1, 1), $ax);
+                @each $pref in $poles {
+                    $i: pole-idx($pref);
+                    $un: v + $pref;
+                    @include compile-property($prop, $val, $suf + str-slice($pref, $i, $i), $vp, null, $un, $ax);
+                    @include compile-property($prop, $val, $suf, $vp, $pref, $un, $ax);
+                }
+            }
+            @if $suf != n {
+                @include compile-property($prop, $val, $suf, $bp);
+            }
+            @if $suf != a {
+                @each $pref in $poles {
+                    @include compile-property($prop, $val, $suf, $bp, $pref);
+                }
+            }
+        }
+        @each $val in join(fit, $poles) {
+            $i: pole-idx($val);
+            $suf: str-slice($val, $i, $i) + c;
+            $val: $val + "-content";
+            @include compile-property($prop, $val, $suf, $bp);
+            @each $pref in $poles {
+                @include compile-property($prop, $val, $suf, $bp, $pref);
             }
         }
     }
 }
 
-.w-dw {
-  width: 100vw !important;
-  overflow-x: hidden !important;
-}
-.h-dh {
-  height: 100vh !important;
-  overflow-y: hidden !important;
-}
 @include compile-sets;

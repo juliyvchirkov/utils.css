@@ -1,8 +1,8 @@
 {
   "name": "utils.css",
-  "version": "2.0.0-rc1",
+  "version": "2.0.0-rc2",
   "license": "MIT",
-  "homepage": "https://github.com/juliyvchirkov/utils.css",
+  "homepage": "https://github.com/juliyvchirkov/utils.css/tree/v2.0.0-rc2",
   "bugs": "https://github.com/juliyvchirkov/utils.css/issues",
   "repository": {
     "type": "git",
@@ -21,8 +21,28 @@
     "postcss-scss": "^1.0.2"
   },
   "scripts": {
-    "build": "for src in *.scss; do postcss $src -o ../dist/$(basename $src .scss).min.css -p postcss-scss -u postcss-node-sass -u autoprefixer -u cssnano --no-map; done"
+    "pre:clean": "rm -vf dist/*",
+    "scsscompile": "cd src && postcss *.scss -d ../dist -x .css -p postcss-scss -u postcss-node-sass --no-map && cd ..",
+    "prefix": "postcss dist/* -r -u autoprefixer --no-map",
+    "minify": "postcss dist/* -d dist -x min.css -u cssnano --no-map",
+    "post:clean": "for css in dist/*; do [[ $css =~ min.css$ ]] || rm -v $css; done",
+    "build": "for task in pre:clean scsscompile prefix minify post:clean; do npm run $task; done"
   },
+  "cssnano": {
+    "preset": [
+      "default"
+    ]
+  },
+  "browserslist": [
+    "Chrome >= 45",
+    "Firefox ESR",
+    "Edge >= 12",
+    "Explorer >= 10",
+    "iOS >= 9",
+    "Safari >= 9",
+    "Android >= 4.4",
+    "Opera >= 30"
+  ],
   "keywords": [
     "css",
     "css3",
@@ -51,20 +71,5 @@
     "html",
     "html5",
     "html-css"
-  ],
-  "browserslist": [
-    "Chrome >= 45",
-    "Firefox ESR",
-    "Edge >= 12",
-    "Explorer >= 10",
-    "iOS >= 9",
-    "Safari >= 9",
-    "Android >= 4.4",
-    "Opera >= 30"
-  ],
-  "cssnano": {
-    "preset": [
-      "default"
-    ]
-  }
+  ]
 }

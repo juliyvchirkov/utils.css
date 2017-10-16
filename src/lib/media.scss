@@ -10,16 +10,13 @@ $media: (xs: ($media-xs, $media-sm - 1),
          lg: ($media-lg, $media-xl - 1),
          xl: $media-xl);
 
-@function media-query($query) {
+@each $bp in map-keys($media) {
+    $query: map-get($media, $bp);
     $bp-bottom: nth($query, 1);
     $bp-top: if(length($query) == 2, nth($query, 2), null);
-    @return "(" + if($bp-bottom != 0, "min-width:" + $bp-bottom, "") +
-            if($bp-bottom != 0 and $bp-top != null, ") and (", "") +
-            if($bp-top != null, "max-width:" + $bp-top, "") + ")";
-}
-
-@each $key in map-keys($media) {
-   @media #{media-query(map-get($media, $key))} {
-      @include compile-sets("-" + $key);
-   }
+    @media #{"(" + if($bp-bottom != 0, "min-width: " + $bp-bottom, "") +
+                   if($bp-bottom != 0 and $bp-top != null, ") and (", "") +
+                   if($bp-top != null, "max-width: " + $bp-top, "") + ")"} {
+        @include compile-sets("-" + $bp);
+    }
 }

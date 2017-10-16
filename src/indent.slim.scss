@@ -4,30 +4,31 @@ $ruler: 2 xs, 5 sm, 10 "", 15 lg, 20, 25 xl, 30, 40, 50 hg, 60, 70, 80, 90, 100 
 
 @mixin compile-property($prop, $bp: "", $sign: "") {
     @each $side in $directions {
-        @each $unit in if($sign == "", join($ruler, (0 z, if($prop == margin and $side != null, auto a, ""))), $ruler) {
+        @each $unit in if($sign == "", join($ruler, (0 z, if(index($properties, $prop) == 1 and $side != null, auto a, ""))), $ruler) {
             $val: nth($unit, 1);
-            $id: if(length($unit) == 2, nth($unit, 2), null);
-            .#{if($side != null, str-slice($side, 1, 1), "") + if($sign != "", n, "") +
-            ind + if($prop == padding, i, "") + $bp + if($val != 10, "-", "") +
-            if($id == null, str-slice("" + $val, 1, 1) + x, $id)} {
-                #{$prop + if($side != null, "-" + $side, "")}: #{$sign + $val +
-                if($id != null and index(a z, $id) != null, "", px)} !important;
+            $suf: if(length($unit) == 2, nth($unit, 2), null);
+            .#{if($side != null, str-slice($side, 1, 1), "") + if($sign != "", n, "") + ind +
+            if($prop == nth($properties, length($properties)), i, "") + $bp + if($suf == "", "", "-") +
+            if($suf == null, str-slice("" + $val, 1, 1) + x, $suf)} {
+                #{$prop + if($side != null, "-" + $side, "")}: #{$sign + $val + if(type-of($val) == number, px, "")} !important;
             }
         }
     }
 }
 
-@mixin margin($margin) {
-    margin: $margin !important;
+@mixin margin($val) {
+    margin: $val !important;
 }
 
-@mixin alike-padding($align, $justify: null) {
+@mixin alike-padding($al: "", $ju: "") {
+    $aj: (align-items: $al,
+          justify-content: $ju);
     display: flex !important;
-    @if $align != null {
-        align-items: #{if($align != center, flex-, "") + $align} !important;
-    }
-    @if $justify != null {
-        justify-content: #{if($justify != center, flex-, "") + $justify} !important;
+    @each $key in map-keys($aj) {
+        $val: map-get($aj, $key);
+        @if $val != "" {
+            #{$key}: #{if($val != center, flex-, "") + $val} !important;
+        }
     }
 }
 
@@ -35,7 +36,7 @@ $ruler: 2 xs, 5 sm, 10 "", 15 lg, 20, 25 xl, 30, 40, 50 hg, 60, 70, 80, 90, 100 
     @each $prop in $properties {
         @include compile-property($prop, $bp);
     }
-    @include compile-property(margin, $bp, "-");
+    @include compile-property(nth($properties, 1), $bp, "-");
     .tind#{$bp}-a.bind#{$bp}-a {
         @include margin(auto 0);
     }
@@ -102,7 +103,7 @@ $ruler: 2 xs, 5 sm, 10 "", 15 lg, 20, 25 xl, 30, 40, 50 hg, 60, 70, 80, 90, 100 
         @include alike-padding(start, center);
     }
     .lindi#{$bp}-a.rindi#{$bp}-a {
-        @include alike-padding(null, center);
+        @include alike-padding("", center);
     }
 }
 
